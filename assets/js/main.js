@@ -90,37 +90,37 @@ document.addEventListener("DOMContentLoaded", function () {
   const whatsappLink = document.getElementById("whatsappLink");
   whatsappLink.href = isWhatsAppDesktopInstalled()
     ? confirm(
-        "Do you want to open WhatsApp Web or the WhatsApp Desktop app? Click 'Cancel' to open WhatsApp Web."
-      )
+      "Do you want to open WhatsApp Web or the WhatsApp Desktop app? Click 'Cancel' to open WhatsApp Web."
+    )
       ? "whatsapp://send?phone=9573071149"
       : "https://web.whatsapp.com/send?phone=9573071149"
     : "https://web.whatsapp.com/send?phone=9573071149";
 
   /*===== contact page =====*/
-  document.getElementById("contactForm").addEventListener("input", function () {
-    document.getElementById("emailPreview").innerHTML = `
-      <div class="email-message__header">
-        A message by <strong>${document.getElementById("name").value || "Anonymous"}</strong>
-        (<span class="email">${document.getElementById("email").value || "No email"}</span>) has been written.
-      </div>
-      <div class="email-message__body">
-        <p>${document.getElementById("message").value || "No message yet."}</p>
-      </div>`;
-  });
+document.getElementById("contactForm").addEventListener("input", function () {
+  document.getElementById("emailPreview").innerHTML = `
+    <div class="email-message__header">
+      A message by <strong>${document.getElementById("name").value || "Anonymous"}</strong>
+      (<span class="email">${document.getElementById("email").value || "No email"}</span>) has been written.
+    </div>
+    <div class="email-message__body">
+      <p>${document.getElementById("message").value || "No message yet."}</p>
+    </div>
+  `;
+});
 
-  /*===== Dark Mode Toggle =====*/
-  const darkModeToggle = document.getElementById("darkModeToggle");
-  const body = document.body;
+  // /*===== Dark Mode Toggle =====*/
+  // const darkModeToggle = document.getElementById("darkModeToggle");
+  // console.log(darkModeToggle);
+  // const body = document.body;
 
-  // Check for saved theme preference
-  if (localStorage.getItem("theme") === "dark") {
-    body.classList.add("dark-theme");
-  }
+  // if (localStorage.getItem("theme") === "dark") {
+  //   body.classList.add("dark-theme");
+  // }
 
-  // Toggle dark mode on button click
-  darkModeToggle.addEventListener("click", () => {
-    body.classList.toggle("dark-theme");
-    const theme = body.classList.contains("dark-theme") ? "dark" : "light";
-    localStorage.setItem("theme", theme);
-  });
+  // darkModeToggle.addEventListener("click", () => {
+  //   body.classList.toggle("dark-theme");
+  //   const theme = body.classList.contains("dark-theme") ? "dark" : "light";
+  //   localStorage.setItem("theme", theme);
+  // });
 });
