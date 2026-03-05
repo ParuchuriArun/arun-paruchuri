@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- =====BOX ICONS===== -->
+
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Portfolio website complete</title>
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Arun Paruchuri</a>
+            </div>
+
+            <!-- Popup Message -->
+            <div class="popup" id="popup">
+                <div class="popup__content">
+                    <div class="popup__close" id="popup-close">&times;</div>
+                    <div class="popup__details">
+                        <img src="assets/img/profile.png" alt="Your Photo" class="popup__photo">
+                        <div class="popup__info">
+                            <h2><strong>Name:</strong> Paruchuri Arun</h2>
+                            <br> <!-- Add a line break for gap -->
+                            <p><strong>E-Mail: </strong> Arunparuchri19@gmail.com</p>
+                            <p><strong>DOB:</strong> 19/07/01</p>
+                            <!-- <p><strong>Age:</strong> 24</p> -->
+                            <p><strong>Education:</strong> Bachelor's degree</p>
+                            <p><strong>Phone: </strong> +1 (913)-295-4341</p>
+                            <!-- <p><strong>Phone: </strong><strong><span style="color: red;">+ -->
+                            <!-- If required add more details -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup__overlay" id="popup-overlay"></div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Experience</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Dark Mode Toggle Button -->
+            <div class="nav__item">
+                <button class="nav__dark-mode-toggle" id="darkModeToggle">
+                    <i class='bx bx-moon'></i>
+                </button>
+            </div>
+
+            <!-- Dark Mode Styles (add this to your existing CSS) -->
+            <style>
+                body.dark-theme {
+                    background-color: #1a1a1a;
+                    color: #fff;
+                }
+            </style>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+    <main class="l-main">
+
+
+        <!--===== HOME =====-->
+
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Arun Paruchuri</span><br> Software
+                    Developer</h1>
+
+                <a href="#contact" class="button">Contact</a>
+                <a href="assets/img/resume.pdf" target="_blank" class="about__resume-button"> Resume 📩</a>
+
+                <!-- <a href="assets/img/resume.pdf" download="Arun_Paruchuri_Resume.pdf" class="about__resume-button"> Resume 📩</a> -->
+            </div>
+
+
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/paruchuri-arun-a04a8b207" class="home__social-icon"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://www.instagram.com/arunparuchuri_07/" class="home__social-icon"><i
+                        class='bx bxl-instagram'></i></a>
+                <a href="https://web.whatsapp.com/send?phone=9573071149" class="home__social-icon" target="_blank"><i
+                        class='bx bxl-whatsapp'></i></a>
+            </div>
+
+            <div class="home__img">
+                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask0" mask-type="alpha">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                        <image class="home__blob-img" x="50" y="60" href="assets/img/profile.png" />
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+
+        <!--===== ABOUT =====-->
+
+        <!-- <section class="about section" id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/about.jpg" alt="">
+                </div>
+                <div>
+                    <h2 class="about__subtitle">Paruchuri Arun</h2>
+                    <p class="about__text">Hello, I am Arun Paruchuri, an Associate Engineer working at a prominent AI
+                        startup.
+                        My
+                        expertise lies in <strong><span style="color: red;">DevOps</span></strong> related managing all
+                        AWS services and <strong><span style="color: red;">Backend development</span></strong>, with
+                        more than one
+                        year of experience gained at Kore.Ai.
+
+                        <br>
+                        I hold an AWS certification, validating my expertise in
+                        leveraging
+                        LLMs integrated from Node.js backend and AWS services. Driven by a passion for innovation.
+                </div>
+            </div>
+        </section> -->
+
+                <section class="about section" id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/about.jpg" alt="Arun Paruchuri">
+                </div>
+
+                <div>
+                    <h2 class="about__subtitle">Paruchuri Arun</h2>
+
+                    <p class="about__text">
+                        Hello, I’m Arun Paruchuri, a passionate <strong>AI/ML Engineer</strong> and
+                        <strong>Full-Stack Developer</strong> with hands-on experience building
+                        intelligent, scalable, and enterprise-grade applications.
+                        <br><br>
+
+                        Previously, I worked at <strong>Kore.ai</strong> as an AI/ML Engineer, where I
+                        developed AI-driven chatbots, <strong>RAG-based pipelines</strong>, and automation
+                        solutions by integrating <strong>Large Language Models (LLMs)</strong> into
+                        production environments using Python, Java, and AWS.
+                        <br><br>
+
+                        My expertise spans <strong>DevOps</strong>, backend development, and
+                        cloud-native deployments, with strong experience in <strong>AWS</strong>,
+                        <strong>CI/CD pipelines</strong>, and scalable system design.
+                        <br><br>
+
+                        Currently pursuing a Master’s in Computer Science at the
+                        <strong>University of Central Missouri</strong>, I am driven by continuous
+                        learning and a passion for transforming complex AI concepts into practical,
+                        impactful solutions.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--===== WORK =====-->
+
+        <section class="work section" id="work">
+            <h2 class="section-title">Work</h2>
+            <div class="work__container">
+                <div class="work__item">
+                    <img src="assets/img/work1.jpg" alt="">
+                    <div class="work__details">
+                        <h3>Company: <strong>Kore.ai</strong></h3>
+                        <p><strong>Role:</strong> Associate Engineer</p>
+                        <p><strong>Experience:</strong> 1.8 years</p>
+                        <p><strong>Description:</strong> Developed AI chatbots to improve retail customer experience by
+                            integrating advanced semantic search capabilities using AWS services.</p>
+                        <p><strong>Skills:</strong> Node.js | LLM's | AWS Services | RAG | NLP | Chatbots | Gen AI</p>
+                        <p><strong>Location:</strong> Hyderabad, TN</p>
+                        <p> Nov 2022 - July 2024</p>
+                    </div>
+                </div>
+
+                <div class="work__item">
+                    <img src="assets/img/work2.png" alt="">
+                    <div class="work__details">
+                        <h3>Company: <strong>Google</strong></h3>
+                        <p><strong>Role:</strong> Developer</p>
+                        <p><strong>Experience:</strong> 2 years</p>
+                        <p><strong>Description:</strong> Worked on full-stack web applications using React and Node.js.
+                        </p>
+                        <p><strong>Location:</strong> Bangalore, KA</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--===== SKILLS =====-->
+
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills__grid">
+
+                <!-- AWS Skill -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="assets/img/aws.png" alt="AWS Icon">
+                    </div>
+                    <h3>
+                        <a href="https://www.credly.com/badges/fbdfa4bf-91a6-4514-854f-c0a8c3aad4b9" target="_blank"
+                            rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
+                            Amazon Web Services
+                        </a>
+                    </h3>
+                    <p>Certified Cloud Practitioner • Infrastructure & Deployment</p>
+                    <div class="skill-progress" data-progress="90"></div>
+                </div>
+
+                <!-- Node.js Skill -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="assets/img/nodejs.png" alt="AI Icon">
+                    </div>
+                    <h3>Node.js</h3>
+                    <p>Backend APIs • Express • RESTful Integration</p>
+                    <div class="skill-progress" data-progress="85"></div>
+                </div>
+
+                <!-- AI Skill -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="assets/img/ai.png" alt="AI Icon">
+                    </div>
+                    <h3>AI / LLM Integration</h3>
+                    <p>OpenAI • LangChain • RAG Pipelines</p>
+                    <div class="skill-progress" data-progress="85"></div>
+                </div>
+
+                <!-- JavaScript Skill -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <!-- <i class="bx bxl-javascript"></i> -->
+                        <img src="assets/img/js.png" alt="AI Icon">
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>Frontend Interactivity • APIs • ES6+</p>
+                    <div class="skill-progress" data-progress="75"></div>
+                </div>
+
+                <!-- Python Skill -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="assets/img/python.png" alt="Python Icon">
+                    </div>
+                    <h3>Python</h3>
+                    <p>Automation • Data Parsing • AI Prototyping</p>
+                    <div class="skill-progress" data-progress="70"></div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!--===== Education =====-->
+        <section class="education section" id="education">
+            <h2 class="section-title">Education</h2>
+
+            <div class="education-section bd-grid">
+                <!-- Dhanekula Institute -->
+                <div class="education-block">
+                    <h3 class="education__institution">
+                        <a href="https://old.diet.ac.in/" target="_blank" rel="noopener noreferrer"
+                            style="color: inherit; text-decoration: none;">
+                            <!-- Dhanekula Institute of Engineering & Technology -->Jawaharlal Nehru Technological University
+                        </a>
+                    </h3>
+                    <p class="education__location">India</p>
+                    <p><strong>Degree:</strong> B.Tech in Computer Science and Engineering</p>
+                    <p><strong>CGPA:</strong> 3.0 / 4.0</p>
+                    <p><strong>Year:</strong> 2018 – 2022</p>
+                    <p><strong>Relevant Courses:</strong></p>
+                    <ul class="education__list">
+                        <li>Machine Learning</li>
+                        <li>Data Mining</li>
+                        <li>Probability and Statistics</li>
+                        <li>Foundations of Data Analytics</li>
+                        <li>Data Management for Analytics</li>
+                        <li>Deterministic Operational Research</li>
+                    </ul>
+                </div>
+
+                <!-- University of Central Missouri -->
+                <div class="education-block">
+                    <h3 class="education__institution">
+                        <a href="https://www.ucmo.edu/" target="_blank" rel="noopener noreferrer"
+                            style="color: inherit; text-decoration: none;">
+                            University Of Central Missouri
+                        </a>
+                    </h3>
+                    <p class="education__location">Kansas, KS</p>
+                    <p><strong>Degree:</strong> Master in Computer Science & Engineering</p>
+                    <p><strong>CGPA:</strong> 3.5 / 4.0</p>
+                    <p><strong>Year:</strong> 2024 – 2026</p>
+                    <p><strong>Relevant Courses:</strong></p>
+                    <ul class="education__list">
+                        <li>Machine Learning</li>
+                        <li>Data Mining</li>
+                        <li>Probability and Statistics</li>
+                        <li>Foundations of Data Analytics</li>
+                        <li>Data Management for Analytics</li>
+                        <li>Deterministic Operational Research</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <!--===== CONTACT =====-->
+
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact__container bd-grid">
+                <form action="#" method="post" class="contact__form" id="contactForm">
+                    <input type="text" placeholder="Name" class="contact__input" id="name" required>
+                    <input type="email" placeholder="Email" class="contact__input" id="email" required>
+                    <textarea placeholder="Message" cols="30" rows="10" class="contact__input" id="message"
+                        required></textarea>
+                    <input type="submit" value="Submit" class="contact__button button" id="submit">
+                </form>
+
+                <!-- Live preview container (initially hidden) -->
+                <div id="emailPreviewArea" style="display:none; margin-top: 20px;">
+                    <div class="email-message" id="emailPreview"
+                        style="background:#f7f7f7; padding:15px; border-radius:8px; border:1px solid #ddd;">
+                        <!-- This will be dynamically filled by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Arun Paruchuri</p>
+
+            <div class="footer__social">
+                <a href="https://www.linkedin.com/in/paruchuri-arun-a04a8b207" class="footer__icon">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+                <a href="https://www.instagram.com/arunparuchuri_07/" class="footer__icon">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+                <!-- ✅ Updated WhatsApp link -->
+                 <!-- <a href="https://web.whatsapp.com/send?phone=9573071149" class="footer__icon"><i
+                        class='bx bxl-whatsapp'></i></a> -->
+                <a id="whatsappLink" href="#" class="footer__icon">
+                    <i class='bx bxl-whatsapp'></i>
+                </a>
+            </div>
+        </footer>
+
+
+        <!--===== MAIN JS =====-->
+
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+        <script>
+            // Initialize EmailJS
+            (function () {
+                emailjs.init("uYNaQAeyqOhyiqoal"); 
+            })();
+
+            const form = document.getElementById("contactForm");
+            const previewArea = document.getElementById("emailPreviewArea");
+            const previewBox = document.getElementById("emailPreview");
+
+            form.addEventListener("input", () => {
+                const name = document.getElementById("name").value || "Anonymous";
+                const email = document.getElementById("email").value || "No Email Provided";
+                const message = document.getElementById("message").value || "No message yet.";
+
+                previewArea.style.display = "block";
+                previewBox.innerHTML = `
+      <p><strong>${name}</strong> (${email}) has contacted you via your portfolio website.</p>
+      <p><strong>Message:</strong></p>
+      <p>${message}</p>
+      <hr>
+      <p>Sent via <a href="https://www.emailjs.com" target="_blank">EmailJS</a></p>
+    `;
+            });
+
+            // 🟢 Send email via EmailJS
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                const name = document.getElementById("name").value.trim();
+                const email = document.getElementById("email").value.trim();
+                const message = document.getElementById("message").value.trim();
+
+                if (!name || !email || !message) {
+                    alert("⚠️ Please fill in all fields before submitting.");
+                    return;
+                }
+
+                emailjs
+                    .send("service_pm081sh", "template_0f3yn36", {
+                        from_name: name,
+                        from_email: email,
+                        message: message
+                    })
+                    .then(() => {
+                        alert("✅ Message sent successfully!");
+                        form.reset();
+                        previewArea.style.display = "none";
+                    })
+                    .catch((error) => {
+                        console.error("❌ EmailJS Error:", error);
+                        alert("❌ Failed to send message. Please try again later.");
+                    });
+            });
+        </script>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bxslider/dist/jquery.bxslider.min.js"></script> -->
+</body>
+
+</html>
