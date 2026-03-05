@@ -30,14 +30,11 @@
                         <img src="assets/img/profile.png" alt="Your Photo" class="popup__photo">
                         <div class="popup__info">
                             <h2><strong>Name:</strong> Paruchuri Arun</h2>
-                            <br> <!-- Add a line break for gap -->
+                            <br>
                             <p><strong>E-Mail: </strong> Arunparuchri19@gmail.com</p>
                             <p><strong>DOB:</strong> 19/07/01</p>
-                            <!-- <p><strong>Age:</strong> 24</p> -->
                             <p><strong>Education:</strong> Bachelor's degree</p>
                             <p><strong>Phone: </strong> +1 (913)-295-4341</p>
-                            <!-- <p><strong>Phone: </strong><strong><span style="color: red;">+ -->
-                            <!-- If required add more details -->
                         </div>
                     </div>
                 </div>
@@ -87,7 +84,6 @@
                 <a href="#contact" class="button">Contact</a>
                 <a href="assets/img/resume.pdf" target="_blank" class="about__resume-button"> Resume 📩</a>
 
-                <!-- <a href="assets/img/resume.pdf" download="Arun_Paruchuri_Resume.pdf" class="about__resume-button"> Resume 📩</a> -->
             </div>
 
 
@@ -118,33 +114,7 @@
 
 
         <!--===== ABOUT =====-->
-
-        <!-- <section class="about section" id="about">
-            <h2 class="section-title">About</h2>
-
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <img src="assets/img/about.jpg" alt="">
-                </div>
-                <div>
-                    <h2 class="about__subtitle">Paruchuri Arun</h2>
-                    <p class="about__text">Hello, I am Arun Paruchuri, an Associate Engineer working at a prominent AI
-                        startup.
-                        My
-                        expertise lies in <strong><span style="color: red;">DevOps</span></strong> related managing all
-                        AWS services and <strong><span style="color: red;">Backend development</span></strong>, with
-                        more than one
-                        year of experience gained at Kore.Ai.
-
-                        <br>
-                        I hold an AWS certification, validating my expertise in
-                        leveraging
-                        LLMs integrated from Node.js backend and AWS services. Driven by a passion for innovation.
-                </div>
-            </div>
-        </section> -->
-
-                <section class="about section" id="about">
+        <section class="about section" id="about">
             <h2 class="section-title">About</h2>
 
             <div class="about__container bd-grid">
@@ -293,7 +263,8 @@
                     <h3 class="education__institution">
                         <a href="https://old.diet.ac.in/" target="_blank" rel="noopener noreferrer"
                             style="color: inherit; text-decoration: none;">
-                            <!-- Dhanekula Institute of Engineering & Technology -->Jawaharlal Nehru Technological University
+                            <!-- Dhanekula Institute of Engineering & Technology -->Jawaharlal Nehru Technological
+                            University
                         </a>
                     </h3>
                     <p class="education__location">India</p>
@@ -373,9 +344,6 @@
                 <a href="https://www.instagram.com/arunparuchuri_07/" class="footer__icon">
                     <i class='bx bxl-instagram'></i>
                 </a>
-                <!-- ✅ Updated WhatsApp link -->
-                 <!-- <a href="https://web.whatsapp.com/send?phone=9573071149" class="footer__icon"><i
-                        class='bx bxl-whatsapp'></i></a> -->
                 <a id="whatsappLink" href="#" class="footer__icon">
                     <i class='bx bxl-whatsapp'></i>
                 </a>
@@ -390,7 +358,7 @@
         <script>
             // Initialize EmailJS
             (function () {
-                emailjs.init("uYNaQAeyqOhyiqoal"); 
+                emailjs.init("uYNaQAeyqOhyiqoal");
             })();
 
             const form = document.getElementById("contactForm");
@@ -412,7 +380,7 @@
     `;
             });
 
-            // 🟢 Send email via EmailJS
+
             form.addEventListener("submit", function (e) {
                 e.preventDefault();
 
@@ -446,7 +414,6 @@
 
         <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
-        <!-- <script src="https://cdn.jsdelivr.net/npm/bxslider/dist/jquery.bxslider.min.js"></script> -->
 </body>
 
 </html>
