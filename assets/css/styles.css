@@ -538,6 +538,57 @@ body.dark-theme .work__details strong {
   color: #00b4d8;
 }
 
+/* ===== PROJECTS ===== */
+
+.projects__container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap:2rem;
+    margin-top:2rem;
+}
+
+.project__card{
+    background:#ffffff;
+    border-radius:12px;
+    overflow:hidden;
+    text-decoration:none;
+    color:#333;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    transition:all 0.3s ease;
+}
+
+.project__card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.project__card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.project__content{
+    padding:1rem;
+}
+
+.project__content h3{
+    margin-bottom:8px;
+    font-size:1.2rem;
+}
+
+.project__content p{
+    font-size:0.9rem;
+    color:#555;
+    margin-bottom:10px;
+}
+
+.project__tech{
+    font-size:0.8rem;
+    color:#4070f4;
+    font-weight:600;
+}
+
 /* ===== EDUCATION ===== */
 .education-section {
   display: grid;

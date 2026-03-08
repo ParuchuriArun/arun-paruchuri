@@ -57,7 +57,7 @@ I am interested in **Cloud Computing, Web Development, and Modern Technologies**
 This portfolio highlights my projects, technical skills, and experience.
 
 ## 🚀 How to Run the Project
-1. Clone the repository:- git clone https://github.com/your-username/portfolio-website.git
+1. Clone the repository:- git clone https://github.com/ParuchuriArun/arun-paruchuri.git
 2. Open the project folder
 3. Run the website by opening: index.html in your browser.
 
